@@ -15,6 +15,7 @@ const chains = [
   { value: '0x2105', label: 'Base', soon: false, icon: 'https://altcoinsbox.com/wp-content/uploads/2023/02/base-logo-in-blue.webp' },
   { value: '0x103d', label: 'Cross Finance', soon: false, icon: 'https://miro.medium.com/v2/resize:fit:256/1*jTN3cYGlobHuPdnhu2lYhg.png' },
   { value: '0x89', label: 'Polygon', soon: false, icon: 'https://cdn-icons-png.freepik.com/512/12114/12114233.png' },
+  { value: '0x34816e', label: 'MANTA', soon: false, icon: 'https://seeklogo.com/images/M/manta-network-manta-logo-D595CAF1F9-seeklogo.com.png' },
   { value: '-', label: 'Cardano', soon: true, icon: 'https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/cardano_ada-512.png' },
   { value: '-', label: 'Solana', soon: true, icon: 'https://cryptologos.cc/logos/solana-sol-logo.png' },
 ];

@@ -378,7 +378,7 @@ const COFINANCE_FACTORY_ABI = [
 	}
 ];
 
-const COFINANCE_FACTORY_ADDRESS = '0xee2bf3Aa042C3915190EB9bf50B9EF5ae89565A9'; 
+const COFINANCE_FACTORY_ADDRESS = '0xbbfCDbB762BD83c71A048fFb3629C732493d140a'; 
 
 export const createPool = async (
   provider: ethers.BrowserProvider,

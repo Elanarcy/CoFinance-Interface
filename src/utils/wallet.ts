@@ -24,6 +24,7 @@ export const switchChain = async (chainId: string): Promise<void> => {
       });
     } catch (error) {
       if (error.code === 4902) {
+        console.log(chainId);
         console.error('Chain not found. Please add the chain to MetaMask.');
       } else {
         console.error('Error switching chains:', error);
