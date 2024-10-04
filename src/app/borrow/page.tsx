@@ -75,7 +75,7 @@ const Borrow: React.FC = () => {
       providerRef.current = new ethers.BrowserProvider(window.ethereum);
       const signer = await providerRef.current.getSigner();
       const accountAddress = await signer.getAddress();
-      setAccount(accountAddress); // Set account here properly
+      setAccount(accountAddress); 
     };
 
     loadAccount();
@@ -108,13 +108,11 @@ const Borrow: React.FC = () => {
     setAccount(null);
     setConnected(false);
   };
-
-  // Fix the CardConnectButton with return statement
   const CardConnectButton = () => (
-    <div className="absolute text-center justify-center flex items-center z-50 mx-auto my-5" data-aos="fade-up">
-      <div className=' card card-compact bg-[#141414] w-96 shadow-xl'>
+    <div className="absolute text-center justify-center flex items-center z-50" data-aos="fade-up">
+      <div className='rounded-lg bg-[#141414] w-96 shadow-xl'>
         <figure>
-          <img className='bg-cover w-full '
+          <img className='bg-cover w-full rounded-t-xl'
             src="/redesign/Connect.png"
             alt="Shoes" />
         </figure>
@@ -135,7 +133,7 @@ const Borrow: React.FC = () => {
   return (
     <section className="min-h-screen animation-bounce bg-borrow bg-no-repeat bg-contain image-full text-center max-w-screen">
       <div className="pt-40 px-96 space-y-3">
-        <div className="flex items-center justify-between space-x-4">
+        <div className={`flex items-center justify-between space-x-4 ${account == null ? 'blur-lg' : ''}`}>
           <div className="flex items-center justify-between rounded-xl w-full px-10 bg-explore py-5">
             <div className="text-start">
               <p className="text-4xl font-bold text-white">${collateralBalance.toLocaleString()}</p>
